@@ -4,6 +4,7 @@ import axios from 'axios'
 function App() {
   const handleClick = async()=>{
     const res = await axios.get("https://puce-glorious-chiton.cyclic.app/data",{withCredentials:true})
+    console.log(res.data)
   }
   return (
     <div className="App">
