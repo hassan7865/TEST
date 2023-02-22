@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios'
 function App() {
   const handleClick = async()=>{
-    const res = await axios.get("https://puce-glorious-chiton.cyclic.app/data",{withCredentials:true})
+    const res = await axios.post("https://puce-glorious-chiton.cyclic.app/data",{withCredentials:true})
     console.log(res)
   }
   return (
