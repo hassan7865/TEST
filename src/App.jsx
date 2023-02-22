@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios'
 function App() {
   const handleClick = async()=>{
-    const res = await axios.get("http://localhost:8888/data")
+    const res = await axios.get("http://localhost:8888/data",{withCredentials:true})
   }
   return (
     <div className="App">
